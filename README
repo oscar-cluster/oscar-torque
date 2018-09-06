@@ -1,0 +1,4 @@
+torque: a job batch queuing system.
+
+Note: debian packaging need rework (broken)
+when debian packaging is ok, need to migrate drmaa to tar.gz if not avilable as distro package. so tarball can build both rpm and deb.
