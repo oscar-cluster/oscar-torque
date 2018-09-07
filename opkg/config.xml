@@ -4,10 +4,10 @@
   <class>included</class>
   <summary>TORQUE Resource Manager</summary>
   <description>TORQUE (Tera-scale Open-source Resource and QUEue manager) is a resource manager providing control over batch jobs and distributed compute nodes.  TORQUE is based on OpenPBS version 2.3.12 and incorporates scalability, fault tolerance, and feature extension patches provided by NCSA, OSC, the U.S. Dept of Energy, Sandia, PNNL, U of Buffalo, TeraGrid, and many other leading edge HPC organizations.  This version may be freely modified and redistributed subject to the constraints of the included license.
-</description>
+  </description>
   <license>PBS license (see PBS_License.txt)</license>
   <group>Applications/batch</group>
-  <uri>http://www.clusterresources.com/products/torque</uri>
+  <uri>http://www.adaptivecomputing.com/products/torque</uri>
   <authors>
     <author cat="maintainer">
       <name>Erich Focht</name>
@@ -16,6 +16,10 @@
     <author cat="maintainer">
       <name>Geoffroy Vallee</name>
       <email>valleegr@ornl.gov</email>
+    </author>
+     <author cat="maintainer">
+      <name>Olivier Lahaye</name>
+      <email>olivier.lahaye@cea.fr</email>
     </author>
   </authors>
   <serverDeps>
@@ -27,25 +31,22 @@
         <dist>sles</dist>
         <dist>suse</dist>
       </filters>  
-      <pkg>torque-oscar</pkg>
-      <pkg>torque-oscar-libs</pkg>
-      <pkg>torque-oscar-server</pkg>
-      <pkg>torque-oscar-gui</pkg>
-      <pkg>torque-oscar-mom</pkg>
-      <pkg>torque-oscar-client</pkg>
-      <pkg>torque-oscar-scheduler</pkg>
+      <pkg>torque</pkg>
+      <pkg>torque-server</pkg>
+      <pkg>torque-scheduler</pkg>
+      <pkg>torque-gui</pkg>
+      <pkg>torque-client</pkg>
       <pkg>maui-oscar</pkg>
     </requires>
     <requires>
       <filters>
         <dist>debian</dist>
       </filters>
-      <pkg>torque-oscar</pkg>
-      <pkg>torque-oscar-server</pkg>
-      <pkg>torque-oscar-gui</pkg>
-      <pkg>torque-oscar-mom</pkg>
-      <pkg>torque-oscar-client</pkg>
-      <pkg>torque-oscar-scheduler</pkg>
+      <pkg>torque</pkg>
+      <pkg>torque-server</pkg>
+      <pkg>torque-gui</pkg>
+      <pkg>torque-client</pkg>
+      <pkg>torque-scheduler</pkg>
       <pkg>maui-oscar</pkg>
     </requires>
   </serverDeps>
@@ -57,26 +58,21 @@
         <dist>rhel</dist>
         <dist>sles</dist>
         <dist>suse</dist>
-      </filters>  
-      <pkg>torque-oscar</pkg>
-      <pkg>torque-oscar-mom</pkg>
-      <pkg>torque-oscar-client</pkg>
-      <pkg>torque-oscar-drmaa</pkg>
-    </requires>
-     <requires>
-      <filters>
         <dist>debian</dist>
-      </filters>
-      <pkg>torque-oscar</pkg>
-      <pkg>torque-oscar-libs</pkg>
-      <pkg>torque-oscar-mom</pkg>
-      <pkg>torque-oscar-client</pkg>
-      <pkg>torque-oscar-modulefile</pkg>
+      </filters>  
+      <pkg>torque</pkg>
+      <pkg>torque-client</pkg>
+      <pkg>torque-drmaa</pkg>
     </requires>
   </clientDeps>
   <apiDeps/>
   <changelog>
-    <versionEntry version="2.4.4-1">
+    <versionEntry version="2.5.0-1">
+      <changelogEntry authorName="Olivier Lahaye" date="2018-09-07T10:12:27+02:00">
+        <item>Update for torque-5.1.1. (mom is part of torque-client).</item>
+      </changelogEntry>
+    </versionEntry>
+     <versionEntry version="2.4.4-1">
       <changelogEntry authorName="Olivier Lahaye" date="2014-09-10T12:27:46+02:00">
         <item>Fix torque_nodes_up.pl testing routine.</item>
       </changelogEntry>
