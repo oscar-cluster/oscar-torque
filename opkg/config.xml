@@ -83,7 +83,7 @@
       </changelogEntry>
     </versionEntry>
     <versionEntry version="2.4.2-1">
-      <changelogEntry authorName="Olivier Lahaye" date="2014-07-1TT18:59:47+02:00">
+      <changelogEntry authorName="Olivier Lahaye" date="2014-07-11T18:59:47+02:00">
         <item>Fix naemon non existing oscar directory when running post-server-install.</item>
       </changelogEntry>
     </versionEntry>
