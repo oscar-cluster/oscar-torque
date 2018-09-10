@@ -67,8 +67,8 @@
   </clientDeps>
   <apiDeps/>
   <changelog>
-    <versionEntry version="2.5.10-2">
-      <changelogEntry authorName="Olivier Lahaye" date="2088-09-10T14:03:37+02:00">
+    <versionEntry version="2.5.0-2">
+      <changelogEntry authorName="Olivier Lahaye" date="2018-09-10T14:03:37+02:00">
         <item>Rename torque-oscar to torque</item>
       </changelogEntry>
     </versionEntry>
