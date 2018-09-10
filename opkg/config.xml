@@ -67,12 +67,17 @@
   </clientDeps>
   <apiDeps/>
   <changelog>
+    <versionEntry version="2.5.10-2">
+      <changelogEntry authorName="Olivier Lahaye" date="2088-09-10T14:03:37+02:00">
+        <item>Rename torque-oscar to torque</item>
+      </changelogEntry>
+    </versionEntry>
     <versionEntry version="2.5.0-1">
       <changelogEntry authorName="Olivier Lahaye" date="2018-09-07T10:12:27+02:00">
         <item>Update for torque-5.1.1. (mom is part of torque-client).</item>
       </changelogEntry>
     </versionEntry>
-     <versionEntry version="2.4.4-1">
+    <versionEntry version="2.4.4-1">
       <changelogEntry authorName="Olivier Lahaye" date="2014-09-10T12:27:46+02:00">
         <item>Fix torque_nodes_up.pl testing routine.</item>
       </changelogEntry>
